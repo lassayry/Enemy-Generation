@@ -4,7 +4,7 @@ public class EnemyDestroyer : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.TryGetComponent(out Enemy enemy))
+        if(other.gameObject.TryGetComponent(out EnemyMover enemy))
         {
             Destroy(enemy.gameObject);
         }
